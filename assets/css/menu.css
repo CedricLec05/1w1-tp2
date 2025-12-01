@@ -1,0 +1,39 @@
+#chk-menu{
+    display: none;
+}
+
+.nav{
+    position: fixed;
+    top: 50px;
+    right: 10px;
+    width: 190px;
+    height: 290px;
+    border: 2px solid black;
+    background-color: rgba(0, 0, 0, 0.336);
+    transform: translateX(120%);
+    transition: transform 1s ease-in-out;
+}
+
+.nav__bouton{
+    position: fixed;
+    top: 1px;
+    right: 10px;
+}
+
+#chk-menu:checked ~ .nav{
+    transform: translateX(0);
+}
+
+.nav a{
+    display: block;
+    font-size: 20px;
+    color: rgb(240, 238, 255);
+    margin: 5px;
+    background-color: rgba(108, 108, 108, 0.297);
+    padding: 5px;
+}
+
+.nav a:hover{
+    color: black;
+    background-color: rgba(255, 242, 242, 0.231);
+}
