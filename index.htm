@@ -12,15 +12,17 @@
 </head>
 
 <body>
+  <!-- //////////////////////////// HEADER -->
   <div class="background__total">
     <section class="background__haut">
       <header class="haut centre">
         <section class="section accueil">
-          <h1 class="accueil__titre">TP - 2 | Titre</h1>
+          <div class="accueil__titre">
+          <h1>TP - 2 | Titre</h1>
           <h3>Auteur : Cédric Leclerc</h3>
-          <p>Description : Ceci est la description du labo 07, il existe et il est fait.</p>
+          </div>
+          <p id="desc__accueil">Description : Ceci est la description du labo 07, il existe et il est fait.</p>
           <a href="https://github.com/CedricLec05/1w1-tp2">Github</a>
-          <section class="menu">
             <label class="nav__bouton" for="chk-menu"><img src="https://s2.svgbox.net/hero-outline.svg?ic=menu"
                 alt="menu" height="45" width="45"></label>
             <input type="checkbox" name="" id="chk-menu">
@@ -31,11 +33,13 @@
               <a href="#galerie">Galerie</a><br>
               <a href="#video">Vidéo</a><br>
             </nav>
-          </section>
         </section>
       </header>
     </section>
+
+      <!-- //////////////////////////// MAIN -->
     <main class="main centre">
+        <!-- //////////////////////////// INSCRIPTION -->
       <section id="inscription" class="section inscription">
         <div class="section__head">
           <h1 class="section__titre">Inscription</h1>
@@ -72,7 +76,7 @@
           <input type="submit" value="valider" />
         </form>
       </section>
-
+  <!-- //////////////////////////// TABLEAU -->
       <section id="tableau" class="section tableau">
         <div class="section__head">
           <h1 class="section__titre">Tableau</h1>
@@ -124,49 +128,50 @@
         </table>
 
       </section>
-
+  <!-- //////////////////////////// ARTICLES -->
       <section id="articles" class="section articles">
         <div class="section__head">
           <h1 class="section__titre">Articles</h1>
           <a class="accueil__bouton" href="#">Accueil</a>
         </div>
-        <section class="article1">
-        <figure>
-          <img class="figure" src="assets/images/castor2.jpg" alt="">
-          <figcaption>1</figcaption>
+        <figure class="article__figure droite">
           <p>lorem</p>
+          <div class="img__figure">
+          <img id="art1" src="assets/images/castor2.jpg" alt="">
+          <figcaption>castor 1</figcaption>
+          </div>
         </figure>
-        </section>
-        <section class="article2">
-        <figure class=" figureD">
-          <img class="figure" src="assets/images/castor3.jpg" alt="">
-          <figcaption>2</figcaption>
+        <figure class="article__figure">
+          <div class="img__figure">
+          <img id="art2" src="assets/images/castor3.jpg" alt="">
+          <figcaption>castor 2</figcaption>
+          </div>
+          <p>Lorem</p>
+        </figure>
+        <figure class="article__figure">
           <p>lorem</p>
+          <div class="img__figure">
+          <img id="art3" src="assets/images/castor4.jpg" alt="">
+          <figcaption>castor 3</figcaption>
+          </div>
         </figure>
-        </section>
-        <section class="article3">
-        <figure>
-          <img class="figure" src="assets/images/castor4.jpg" alt="">
-          <figcaption>3</figcaption>
-          <p>lorem</p>
-        </figure>
-        </section>
-        <section class="article4">
-        <figure class=" figureD">
-          <img class="figure" src="assets/images/castor5.jpg" alt="">
-          <figcaption>4</figcaption>
-          <p>lorem</p>
-        </figure>
-        </section>
-      </section>
 
+        <figure class="article__figure">
+          <div class="img__figure">
+          <img id="art4" src="assets/images/castor5.jpg" alt="">
+          <figcaption>castor 4</figcaption>
+          </div>
+          <p>lorem</p>
+        </figure>
+      </section>
+  <!-- //////////////////////////// GALERIE -->
       <section id="galerie" class="section galerie">
         <div class="section__head">
           <h1 class="section__titre">Galerie</h1>
           <a class="accueil__bouton" href="#">Accueil</a>
         </div>
       </section>
-
+  <!-- //////////////////////////// VIDEO -->
       <section id="video" class="section video">
         <div class="section__head">
           <h1 class="section__titre">Vidéo</h1>
@@ -174,6 +179,7 @@
         </div>
       </section>
     </main>
+      <!-- //////////////////////////// FOOTER -->
     <section class="background__bas">
       <footer class="bas centre">
         <section class="footer__p">

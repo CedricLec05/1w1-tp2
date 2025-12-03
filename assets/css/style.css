@@ -38,21 +38,14 @@ body{
 
 h1{
     font-family: "SuperPixel";
-    font-size: 55px;
+    font-size: clamp(2px,5vw,3rem);
     margin: 0;
     padding: 0;
-
 }
 
 h2{
     font-family: "Amoria";
     font-size: 45px;
-}
-
-
-
-.menu{
-    outline: 1px solid pink;
 }
 
 .section{
@@ -73,15 +66,24 @@ h2{
 
 .accueil{
     outline: 1px solid rgb(113, 0, 19);
-    display: flex;
+
 }
 
 .accueil__titre{
-    outline: 1px solid red;
-    width: fit-content;
+    display: flex;
+    outline: 5px solid red;
+    max-width: 1100px;
     height: fit-content;
+    justify-content: space-between;
+
 }
 
+#desc__accueil{
+    display: flex;
+    outline: 1px solid blue;
+    height: fit-content;
+    justify-content: center;
+}
 
 p{
     font-family: "Ancient"
@@ -163,33 +165,37 @@ tr{
     background-color: blueviolet;
 }
 
-.figure{
-    display: flex;
-    margin-right:40px ;
-    flex-direction: column;
-    height: 200px;
-    width: 200px;
+#art1,#art2,#art3,#art4 {
+    height: 225px;
+    width: fit-content;
+    max-width: 250px;
     object-fit: contain;
-    outline: 1px solid red;
 }
 
-.article1{
-    display: flex;
-    justify-content: flex-end;
-}
-.article2{
-    display: flex;
-    justify-content: flex-start;
-}
-.article3{
-        display: flex;
-    justify-content: flex-end;
-
-}
 .article4{
-        display: flex;
-    justify-content: flex-start;
 
+}
+.article__figure{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    background-color: rgba(240, 248, 255, 0.155);
+    outline: 1px solid rgb(48, 46, 46);
+}
+
+.article__figure:nth-of-type(odd){
+    justify-content: flex-end;
+    justify-content: space-between;
+}
+
+.article__figure p{
+    font-size: clamp(2px,2vw,2rem);
+    padding:15px;
+}
+
+.img__figure{
+    outline: 2px solid black;
+    background-color: rgba(60, 60, 60, 0.534);
 }
 
 /*=========Galerie=============*/
