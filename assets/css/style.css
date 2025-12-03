@@ -64,36 +64,46 @@ h2{
 
 /*============================HEADER=======================*/
 
-.accueil{
-    outline: 1px solid rgb(113, 0, 19);
-
-}
-
 .accueil__titre{
     display: flex;
-    outline: 5px solid red;
     max-width: 1100px;
     height: fit-content;
     justify-content: space-between;
+    padding: 30px;
 
 }
 
 #desc__accueil{
     display: flex;
-    outline: 1px solid blue;
     height: fit-content;
     justify-content: center;
 }
 
+.git__bouton{
+    outline: 1px solid black;
+    width: fit-content;
+    padding: 2px;
+    background-color: blueviolet;
+}
+
+.git__bouton:hover{
+    background-color: rgba(240, 248, 255, 0.788);
+}
+
+.git__bouton a:hover{
+    color: rgb(119, 17, 214);
+}
+
+.git__bouton a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
 p{
-    font-family: "Ancient"
+    font-family: "Ancient";
+    font-size: 2rem
 };
-
-
-
-
-
-
 
 /*============================MAIN=======================================*/
 .main{
